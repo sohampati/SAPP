@@ -1,15 +1,10 @@
 from pinecone import Pinecone
-from dotenv import load_dotenv
 from openai import OpenAI
 import numpy as np
-from tqdm import tqdm
 import os
-
-load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_KEY")
-pc = Pinecone(api_key=os.getenv("PINECONE_KEY"))
+os.environ["OPENAI_API_KEY"] =os.environ.get('OPENAI_KEY')
+pc = Pinecone(api_key=os.environ.get('PINECONE_KEY'))
 index = pc.Index("sapp2")
-
 client = OpenAI()
 
 data = {
@@ -125,7 +120,8 @@ while userResponse != "exit":
     userResponse += "\n Use the following data to assist in your reponse:"
     query_result = query(userResponse)
     for match in query_result["matches"]:
-        userResponse += f"\n{match["metadata"]["original_data"]}"
+        var = match["metadata"]["original_data"]
+        userResponse += f"{var}"
 
     conversation_history.append({"role": "user", "content": userResponse})
     response = client.chat.completions.create(
