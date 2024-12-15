@@ -42,9 +42,10 @@ Minimal errors in transcription and intent recognition.
 
 Speech Recognition: Advanced ASR (Automatic Speech Recognition) systems for transcription.
 
-Machine Learning: Custom-built and pre-trained models for intent recognition and dialogue management.
+Machine Learning: gpt-4o turbo
 
-Cloud Infrastructure: Scalable and secure hosting to ensure reliability.
+Database: PineconeDB
 
-APIs: Seamless integration with CRM and other business tools.
+Cloud Infrastructure: AWS
 
+Libraries: RealtimeSTT
