@@ -1,8 +1,8 @@
-#Overview
+# SAPP
 
 SAPP is revolutionizing the sales industry by building an AI-powered virtual salesperson capable of handling end-to-end phone calls. Our solution integrates advanced audio transcription, machine learning, and conversational AI to deliver seamless and human-like interactions. This cutting-edge system is designed to transform the sales process by improving efficiency, scalability, and customer satisfaction.
 
-Vision
+## Vision
 
 Our vision is to empower businesses with AI-driven sales solutions that:
 
@@ -12,7 +12,7 @@ Operate at scale without compromising quality.
 
 Enhance sales performance through data-driven insights.
 
-Key Features
+## Key Features
 
 End-to-End Phone Call Handling:
 
@@ -38,7 +38,7 @@ Leveraging state-of-the-art AI models for conversational accuracy.
 
 Minimal errors in transcription and intent recognition.
 
-Technology Stack
+## Technology Stack
 
 Speech Recognition: Advanced ASR (Automatic Speech Recognition) systems for transcription.
 
