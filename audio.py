@@ -2,10 +2,12 @@ from pinecone import Pinecone
 from openai import OpenAI
 import numpy as np
 import os
+from dotenv import load_dotenv
 from RealtimeSTT import AudioToTextRecorder
 import pyautogui
 class SalesAssistant:
     def __init__(self):
+        load_dotenv()
         os.environ["OPENAI_API_KEY"] =os.environ.get('OPENAI_KEY')
         self.pc = Pinecone(api_key=os.environ.get('PINECONE_KEY'))
         self.index = self.pc.Index("sapp2")
